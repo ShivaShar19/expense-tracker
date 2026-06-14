@@ -12,7 +12,7 @@ import Expense_Tracker.dto.RegisterRequest;
 import Expense_Tracker.model.User;
 import Expense_Tracker.repository.UserRepository;
 import Expense_Tracker.security.JwtUtil;
-
+ 
 @Service
 public class AuthService {
 	

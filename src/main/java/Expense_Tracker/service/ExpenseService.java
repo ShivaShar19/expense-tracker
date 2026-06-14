@@ -19,7 +19,7 @@ public class ExpenseService {
 
     @Autowired
     private UserRepository userRepository;
-
+ 
     public Expense addExpense(ExpenseRequest request, String email) {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("User not found!"));

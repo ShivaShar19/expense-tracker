@@ -55,7 +55,7 @@ public class Expense {
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(String title) { 
 		this.title = title;
 	}
 

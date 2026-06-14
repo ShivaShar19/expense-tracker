@@ -27,7 +27,7 @@ public class ExpenseController {
     @Autowired
     private ExpenseService expenseService;
 
-    @PostMapping
+    @PostMapping 
     public ResponseEntity<Expense> addExpense(
             @RequestBody ExpenseRequest request,
             @AuthenticationPrincipal UserDetails userDetails) {
@@ -59,3 +59,4 @@ public class ExpenseController {
     }
 
 }
+ 
