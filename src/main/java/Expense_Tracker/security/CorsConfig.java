@@ -1,5 +1,7 @@
 package Expense_Tracker.security;
 
+import java.util.List;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -16,7 +18,10 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:3000");
+        config.setAllowedOrigins(List.of(
+        	    "http://localhost:3000",
+        	    "https://expense-tracker-frontend-74xaeesdo-shivam-kumar-s-projects7.vercel.app"
+        	));
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         
